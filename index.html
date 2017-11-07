@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Trebuchet MS:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    </head>
+<body>
+<div id="name">
+<div class="letter" id="p">P</div>
+<div class="letter" id="ink">ink</div>
+<div class="letter" id="a">A</div>
+<div class="letter" id="li">li</div>
+<div class="letter" id="e">e</div>
+<div class="letter" id="n">n</div>
+</div>   
+</body>
+<script>
+const name=document.querySelector('#name');
+const p=document.querySelector('#p');
+const ink=document.querySelector('#ink');
+const a=document.querySelector('#a');
+const li=document.querySelector('#li');
+const e=document.querySelector('#e');
+const n=document.querySelector('#n');
+setTimeout(function() {
+  name.style.transform="translate(20rem,0)"; 
+}, 200);
+setTimeout(function() {
+    ink.textContent="Ink"; 
+  }, 2000);
+   setTimeout(function() {
+    a.textContent="a";
+ }, 3000);
+   setTimeout(function() {
+  a.style.transform="translate(4rem,0)";  
+  li.style.transform="translate(8rem,0)";
+  e.style.transform="translate(12rem,0)";
+  n.style.transform="translate(16rem,0)";
+  p.style.transform="translate(0,8rem)";
+}, 4000);
+setTimeout(function() {
+  a.style.transform="translate(0,0)";  
+  li.style.transform="translate(8rem,8rem)";
+  e.style.transform="translate(2.5rem,0)";
+  p.style.transform="translate(10rem,8rem)";
+}, 4600);
+setTimeout(function() { 
+  li.style.transform="translate(9.5rem,8rem)";
+  n.style.transform="translate(6rem,0)";
+  p.style.transform="translate(19rem,8rem)";
+}, 5200);
+setTimeout(function() { 
+  li.style.transform="translate(9.5rem,0)";
+  p.style.transform="translate(19rem,0)";
+}, 5800);
+setTimeout(function() { 
+name.style.transformOrigin= "0 0";
+name.style.transform="translate(-5rem,0)";
+name.style.transform="scale(0.4)";
+}, 7600);
+</script>
+</html>

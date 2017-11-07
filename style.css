@@ -1,0 +1,19 @@
+#name {
+	position: absolute;
+	display: flex;
+	transition: transform 1s;
+	transition: all 1s;
+	
+}
+
+.letter {
+	font-size: 100px;
+	font-weight: 600;
+	font-family: 'Trebuche', sans-serif;
+	transition: transform 1s;
+	color: #354262;
+	
+}
+.animate {
+	transform: scale(1.3);
+}
